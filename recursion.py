@@ -5,6 +5,17 @@ Haverford College
 Marisleysis De La Cruz
 """
 
+def simple_power_ui():
+    # doctest use, as per http://docs.python.org/lib/module-doctest.html
+    import doctest
+    print("Trying out tests given at the beginning of this script")
+    doctest.testmod()
+
+if __name__ == "__main__":
+    simple_power_ui()
+
+# The execution starts here
+
 def power_using_recursion(base, exp):
     """postcondition: the result is the base raised to the exp power,
                       or a close approximation for information that
